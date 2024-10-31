@@ -5,46 +5,44 @@ const programmersController = require('../controllers/programmers')
 const projectsController = require('../controllers/projects')
 const reviewsController = require('../controllers/reviews')
 
-const { IsAuthenticated } = require("../middleware/authenticate")
-
 router.get('/', companiesController.getAll)
 
 router.get('/:id', companiesController.getSingle)
 
-router.post('/', IsAuthenticated ,companiesController.createCompanies)
+router.post('/', companiesController.createCompanies)
 
-router.put('/:id', IsAuthenticated, companiesController.updateCompanies)
+router.put('/:id', companiesController.updateCompanies)
 
-router.delete('/:id', IsAuthenticated, companiesController.deleteCompanies)
+router.delete('/:id', companiesController.deleteCompanies)
 
 router.get('/', programmersController.getAll)
 
 router.get('/:id', programmersController.getSingle)
 
-router.post('/', IsAuthenticated ,programmersController.createProgrammer)
+router.post('/', programmersController.createProgrammer)
 
-router.put('/:id', IsAuthenticated, programmersController.updateProgrammer)
+router.put('/:id', programmersController.updateProgrammer)
 
-router.delete('/:id', IsAuthenticated, programmersController.deleteProgrammer)
+router.delete('/:id', programmersController.deleteProgrammer)
 
 router.get('/', projectsController.getAll)
 
 router.get('/:id', projectsController.getSingle)
 
-router.post('/', IsAuthenticated ,projectsController.createProject)
+router.post('/', projectsController.createProject)
 
-router.put('/:id', IsAuthenticated, projectsController.updateProject)
+router.put('/:id', projectsController.updateProject)
 
-router.delete('/:id', IsAuthenticated, projectsController.deleteProject)
+router.delete('/:id', projectsController.deleteProject)
 
 router.get('/', reviewsController.getAll)
 
 router.get('/:id', reviewsController.getSingle)
 
-router.post('/', IsAuthenticated ,reviewsController.createReview)
+router.post('/', reviewsController.createReview)
 
-router.put('/:id', IsAuthenticated, reviewsController.updateReview)
+router.put('/:id', reviewsController.updateReview)
 
-router.delete('/:id', IsAuthenticated, reviewsController.deleteReview)
+router.delete('/:id', reviewsController.deleteReview)
 
 module.exports = router

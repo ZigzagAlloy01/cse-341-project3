@@ -1,21 +1,21 @@
 {
   "name": "week03",
   "version": "1.0.0",
-  "description": "My second project",
+  "description": "My third project",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZigzagAlloy01/cse-341-project2.git"
+    "url": "git+https://github.com/ZigzagAlloy01/cse-341-project3.git"
   },
   "author": "Lorenzo Ivan Salamanca Cordoba",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ZigzagAlloy01/cse-341-project2/issues"
+    "url": "https://github.com/ZigzagAlloy01/cse-341-project3/issues"
   },
-  "homepage": "https://github.com/ZigzagAlloy01/cse-341-project2#readme",
+  "homepage": "https://github.com/ZigzagAlloy01/cse-341-project3#readme",
   "dependencies": {
     "body-parser": "^1.20.3",
     "cookie-parser": "^1.4.7",
