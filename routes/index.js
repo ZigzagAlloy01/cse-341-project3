@@ -2,7 +2,7 @@ const router = require('express').Router()
 const passport = require('passport')
 
 router.use('/', require('./swagger'))
-router.use('/', require('./clients'))
+router.use('/', require('./programmers'))
 
 router.get('/login', passport.authenticate('github'), (req, res) => {})
 
